@@ -7,6 +7,7 @@ defmodule WokRestCommons.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     preferred_cli_env: [espec: :test],
      deps: deps]
   end
 
@@ -15,6 +16,9 @@ defmodule WokRestCommons.Mixfile do
   end
 
   defp deps do
-    [{:poison, "~> 1.5"}]
+    [
+      {:poison, "~> 1.5"},
+      {:wok_espec, "0.0.1", git: "git@gitlab.botsunit.com:developer/wok_espec.git", branch: "master"}
+    ]
   end
 end

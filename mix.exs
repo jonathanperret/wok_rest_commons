@@ -4,7 +4,7 @@ defmodule WokRestCommons.Mixfile do
   def project do
     [app: :wok_rest_commons,
      version: "0.0.1",
-     elixir: "~> 1.2",
+     elixir: "~> 1.1",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      preferred_cli_env: [espec: :test],

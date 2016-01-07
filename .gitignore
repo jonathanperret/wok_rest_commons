@@ -1,0 +1,11 @@
+/_build
+/cover
+/deps
+erl_crash.dump
+*.ez
+_jorel
+deps
+log/*
+queues/
+.DS_Store
+.env

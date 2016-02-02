@@ -7,7 +7,7 @@ defmodule JSONAPIResponseRendererSpec do
 
     subject do: WokRESTCommons.JSONAPIResponseRenderer.respond_with(response, %{})
 
-    it do: is_expected.to eq({200, "{\"id\": 1}", default_json_api_headers, %{}})
+    it do: is_expected.to eq({200, default_json_api_headers, "{\"id\": 1}", %{}})
 
   end
 end

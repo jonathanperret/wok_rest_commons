@@ -13,7 +13,7 @@ defmodule WokRestCommons.RequestParserSpec do
 
     context "when malformed json" do
       let :json_string, do: "{id: 1,}"
-      it do: is_expected |> to(eq({:ok, %Response{status_code: 400}}))
+      it do: is_expected |> to(eq({:error, %Response{status_code: 400}}))
     end
   end
 end

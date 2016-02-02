@@ -18,7 +18,7 @@ defmodule WokRestCommons.Mixfile do
   defp deps do
     [
       {:poison, "~> 1.5"},
-      {:wok_espec, "0.0.1", git: "git@github.com:botsunit/wok_espec.git", branch: "master"}
+      {:wok_espec, "0.0.1", github: "botsunit/wok_espec"}
     ]
   end
 end

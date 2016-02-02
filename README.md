@@ -1,4 +1,4 @@
-# WokRestCommons
+# WokRESTCommons
 
 Common files used in wok rest handlers 
 

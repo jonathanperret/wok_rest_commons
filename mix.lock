@@ -10,4 +10,4 @@
   "poison": {:hex, :poison, "1.5.2"},
   "ranch": {:git, "https://github.com/ninenines/ranch", "741bfb73ca663394ecf7a73410506d66f01985a6", [ref: "1.1.0"]},
   "ssl_verify_hostname": {:hex, :ssl_verify_hostname, "1.0.5"},
-  "wok_espec": {:git, "https://github.com/botsunit/wok_espec.git", "e26ae890c20bb3ca07a7e276a07fd3413bb111ff", []}}
+  "wok_espec": {:git, "https://github.com/botsunit/wok_espec.git", "95e043070e83185c8441b2615788d6515c87a39a", []}}

@@ -1,4 +1,4 @@
-defmodule WokRestCommons.RequestParser do
+defmodule WokRESTCommons.RequestParser do
   def parse_request(response, req) do
     decoded = req |> :cowboy_req.body |> decode_body_from_response
     case decoded do

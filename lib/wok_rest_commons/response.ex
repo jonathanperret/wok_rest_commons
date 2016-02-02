@@ -1,4 +1,4 @@
-defmodule WokRestCommons.Response do
+defmodule WokRESTCommons.Response do
   defstruct current_user: %{},
             body: "",
             decoded_body: nil,

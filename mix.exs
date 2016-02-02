@@ -1,4 +1,4 @@
-defmodule WokRestCommons.Mixfile do
+defmodule WokRESTCommons.Mixfile do
   use Mix.Project
 
   def project do

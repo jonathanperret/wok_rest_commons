@@ -2,8 +2,8 @@ defmodule WokRestCommons.RequestParser do
   def parse_request(response, req) do
     decoded = req |> :cowboy_req.body |> decode_body_from_response
     case decoded do
-      {:ok, decoded_body} -> %{response | decoded_body: decoded_body}
-      {:error, _} -> %{response | status_code: 400}
+      {:ok, decoded_body} -> {:ok, %{response | decoded_body: decoded_body}}
+      {:error, _} -> {:ok, %{response | status_code: 400}}
     end
   end
 

@@ -1,6 +1,6 @@
 defmodule WokRESTCommons.JSONAPIResponseRenderer do
-  alias WokRESTCommons.Response
-  def respond_with(%Response{} = response, state) do
-    {response.status_code, response.headers, response.body, state}
+  def respond_with(response), do: raise "2nd param(state) required "
+  def respond_with(response, state) do
+    {response.status_code, response.body, response.headers, state}
   end
 end

@@ -18,7 +18,7 @@ defmodule WokRESTCommons.Mixfile do
   defp deps do
     [
       {:poison, "~> 1.5"},
-      {:wok_espec, "0.0.1", github: "botsunit/wok_espec"}
+      {:wok_espec, github: "botsunit/wok_espec", only: :test}
     ]
   end
 end
